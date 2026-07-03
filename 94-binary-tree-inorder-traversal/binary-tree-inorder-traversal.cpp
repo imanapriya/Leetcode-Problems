@@ -15,7 +15,7 @@ public:
         if(root == NULL) return;
         
         inorder(root->left, ans);     
-        ans.push_back(root->val);     
+        ans.push_back(root->val); //parent subtree    
         inorder(root->right, ans);    
     }
     
